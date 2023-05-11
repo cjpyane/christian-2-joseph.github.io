@@ -12,8 +12,8 @@
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 var animal = {};
-animal.species = "mammal";
-animal['name'] = "Buddy";
+animal.species = "reptile";
+animal['name'] = "slinky";
 animal.noises = [];
 console.log(animal)
 
@@ -23,10 +23,10 @@ console.log(animal)
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 var noises = [];
-noises[noises.push('Woof')]
-noises.push("Growl");
-noises.unshift("wimper");
-noises[noises.push('pant')];
+noises[noises.push('hiss')]
+noises.push("bite");
+noises.unshift("rattle");
+noises[noises.push('slither')];
 console.log(noises.length);
 console.log(noises[noises.length - 1]);
 console.log(noises);
@@ -38,7 +38,7 @@ console.log(noises);
 //////////////////////////////////////////////////////////////////////
 animal['noises'].push(noises);
 animal.noises = noises;
-animal.noises.push('howl');
+animal.noises.push('shedding');
 console.log(animal);
 
 
@@ -64,13 +64,30 @@ console.log(animal);
 //////////////////////////////////////////////////////////////////////
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+var animals = [];
+animals.push(animal);
+console.log(animals);
+var duck = { species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze', 'woosh'] };
+animals.push(duck);
+console.log(animals);
+var fox = { species: 'foxy', name: 'foxalina', noises: ['ye, ye, ye, ye', ' ', 'what dose the fox say', 'howll'] };
+animals.push(fox)
+var coyote = { species: 'coyote', name: 'Wile E coyote', noises: ['YIKES!', 'HELP!', 'Thats All Folks', 'Beep Beep'] };
+animals.push(coyote);
+console.log(animals);
+console.log(animals.length);
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+var friends = [];
+function getRandom(animals){
+  var randomIndex = Math.floor(Math.random() * animals.length);
+  var index = animals[randomIndex];
+  return friends.push(index)
+}
 
+animal.friends = friends
 
 
 /**
