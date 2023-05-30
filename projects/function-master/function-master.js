@@ -134,16 +134,31 @@ if(object.friends){//check if object has friends obj,
 //////////////////////////////////////////////////////////////////////
 
 function nonFriends(name, array) {
-var haters = [];
-
+var haters = [];//create aray for people not found in friends
+for(i = 0; i < array.length; i++){// iterate over whole array in object
+var realOnes = false//declare realones false or else error?
+for(let f = 0; f < array[i].friends.length; f++){//then iterate over all freinds in each array of the object
+if(array[i].friends[f] === name){// if the name equels a name in the friends array realones = true
+    realOnes = true
 }
+}
+if(realOnes === false && array[i].name !== name){// if real ones is false and no variale in array equal name param. push non friends into haters arr.
+    haters.push(array[i].name)
+}
+}
+return haters// return holding arr.
+}
+
+
 
 //////////////////////////////////////////////////////////////////////
 // Function 14 - Update Object ///////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
 function updateObject(object, key, value) {
-
+var newObj = {...object};
+newObj[key] = value;
+return newObj
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -151,7 +166,12 @@ function updateObject(object, key, value) {
 //////////////////////////////////////////////////////////////////////
 
 function removeProperties(object, array) {
-
+    for(var i = 0; i < array.length; i++){
+        if(object.hasOwnProperty(array[i])){
+            delete object[array[i]];
+        }
+    
+    }
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -159,7 +179,13 @@ function removeProperties(object, array) {
 //////////////////////////////////////////////////////////////////////
 
 function dedup(array) {
-
+    let notdupes = [];
+    for(let i = 0; i < array.length; i++){
+        if(notdupes.includes(array[i]) === false){
+            notdupes.push(array[i]);
+        }
+    }
+    return notdupes
 }
 
 //////////////////////////////////////////////////////////////////////

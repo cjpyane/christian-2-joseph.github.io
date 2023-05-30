@@ -1,0 +1,15 @@
+-string manipulation-
+string manipulation is way to change/alter your code. This can be done in some difrent ways.
+
+-with operators- string manipulation can be done with operatora easily. The example I used for aremetic operators 
+is perfect for this. Heres an example.
+
+frunction Ye2024(shouldHeRun){
+    return 'mabey' + 'never'
+}
+
+-string Methods- string methodsa re built in or native to javascript. Theese allow us to manipulate our
+string in multiple ways.
+ex. -string.toLowerCase()
+var str = "GOAT BRON"
+return str.toLowerCase() // "goat bron"

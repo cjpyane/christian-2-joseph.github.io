@@ -1,0 +1,51 @@
+- control flow is the order that we user to execute statements through our code
+-conditionaal statements are used to check our code depending what information we want passed through
+- if statements- if statementsare used to check data against one condition- ex: 
+
+if(1 > 0){
+    console.log(true)
+}
+
+-else if statements- the else if statement is used as when the if statment returns falsey "else" execute this code-
+-ex-
+if(n > 0){
+    console.log(true)
+}else if (n < 0){
+    console.log(false)
+}
+
+-else statement-  else statements are usd to end your flow using one last condition meaning if none of this this execute this-
+-ex-
+if(n > 0){
+    console.log(true)
+}else if (n < 0){
+    console.log(false)
+}else {
+    return 'who cares'
+}
+
+-switch statements- switch statements use cases to test data. if the case test comes back true then you 'break'
+out of the statement- 
+-ex-
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}

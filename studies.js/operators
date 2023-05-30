@@ -1,0 +1,45 @@
+-operators- operators are tools in our code to assist coders in diffrent ways. for example if instead on typing concat 
+when I want to add to variable in a function I can use the addition operator to shorten my code
+
+-assighnment operators- the assighnment operator adds value to the given variable
+'=' -ex- 2 + 2 = x //4
+"+=" -ex- 2 += x //6
+"-=" -ex- 2 -= x //4
+"*=" -ex- 1 *= x //4
+"/=" -ex- 2 /= x //2
+"%" -ex- 2 %= x // 0
+"**=" -ex- 2 **= x// 0
+
+-Arithmetic operators-  arithmetic operator are used like aitmetic equations to help writ code-
+'+' - addition 
+'-' - subtraction
+'*' - multiplication
+'**' - exponent
+'/' - division
+'%' - remainder
+'++' - increment
+'--' - decrement
+
+-comparison operators- comparision operators are used to compare two values to eachother. the most common is greaterthan/ lessthan
+'==' - equals to
+'===' - strictly equals
+'!=' - not equal
+'!===' - strictly not equal
+'>' - greater than
+'<' - lessthan
+'>=' - greater than or equal to
+'<=' - less than or equal to
+
+-logical operators- logical operators are used many times in tandom with conditional statements like the rest. for example the and operator is saying 
+if (x && x) are truthy return true.
+'&&' -  the and operator is used how i descirbed it above
+'||" - the or operator is used like the and operator but instead of checking for if both pass it would see if one of the pass.
+'!' - the not operator is used many times as a way to check for or say anything that is stricly not this
+
+-tenery operator- this is used as a 'shortcut' for code logic. I like to relate this to the arrow function learned in ES6.
+the tenery operator is a way to use conditional statements and check a varibale with diffrent values in you code.
+-ex- 
+function runmiles(5milesreach) {
+  return (5milesreach ? '5' : '3.5');
+}
+console.log(runmiles(true))// 5
